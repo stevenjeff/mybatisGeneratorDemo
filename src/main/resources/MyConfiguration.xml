@@ -8,7 +8,7 @@
     <properties resource="jdbc.properties"/>
 
     <classPathEntry
-            location="S:\mvn_repository\mysql\mysql-connector-java\5.1.26\mysql-connector-java-5.1.26.jar" />
+            location="F:\mvn_repository\mysql\mysql-connector-java\5.1.42\mysql-connector-java-5.1.42.jar" />
     <context id="sqlserverTables" targetRuntime="MyBatis3">
 
         <!-- 生成的pojo，将implements Serializable -->
@@ -53,9 +53,9 @@
 
 
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
-        <table tableName="union_banner"
+        <table tableName="cpa_click_activation20200105"
                enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="true"
                selectByExampleQueryId="false">
         </table>
     </context>

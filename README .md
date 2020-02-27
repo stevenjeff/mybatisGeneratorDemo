@@ -6,5 +6,6 @@
 - maven
 
 # 使用
-- 修改MyConfiguration.xml文件中的表名
+- 修改MyConfiguration.xml文件中location的值，指定驱动路径
+- 修改MyConfiguration.xml文件中tableName的值，指定表名
 - 修改jdbc.properties中的数据源
