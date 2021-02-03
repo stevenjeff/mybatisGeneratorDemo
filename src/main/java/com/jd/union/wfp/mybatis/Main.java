@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
-        String genCfg = "/MyConfiguration.xml";
+        String genCfg = "/generatorConfig.xml";
         File configFile = new File(Main.class.getResource(genCfg).getFile());
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = null;

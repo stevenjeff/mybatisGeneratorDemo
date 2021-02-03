@@ -8,7 +8,7 @@
     <properties resource="jdbc.properties"/>
 
     <classPathEntry
-            location="F:\mvn_repository\mysql\mysql-connector-java\5.1.42\mysql-connector-java-5.1.42.jar" />
+            location="./src/lib/ojdbc6-11.2.0.3.jar"/>
     <context id="sqlserverTables" targetRuntime="MyBatis3">
 
         <!-- 生成的pojo，将implements Serializable -->
@@ -32,11 +32,11 @@
         <!-- 生成model模型，对应的包路径，以及文件存放路径(targetProject)，targetProject可以指定具体的路径,如./src/main/java，
             也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下 -->
         <!--<javaModelGenerator targetPackage="com.joey.mybaties.test.pojo" targetProject="MAVEN"> -->
-        <javaModelGenerator targetPackage="com.jd.union.wfp.entity"
+        <javaModelGenerator targetPackage="com.sunac.crm.entity"
                             targetProject="./src/main/java">
-            <property name="enableSubPackages" value="true" />
+            <property name="enableSubPackages" value="true"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
-            <property name="trimStrings" value="true" />
+            <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!--对应的mapper.xml文件 -->
@@ -47,13 +47,13 @@
 
         <!-- 对应的Mapper接口类文件 -->
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.jd.union.wfp.dao" targetProject="./src/main/java">
-            <property name="enableSubPackages" value="true" />
+                             targetPackage="com.sunac.crm.mapper" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
-        <table tableName="cpa_click_activation20200105"
+        <table tableName="MR_OWNER_APPLICATION"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="true"
                selectByExampleQueryId="false">
